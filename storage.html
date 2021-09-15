@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage data</title>
+    <style>
+.box{
+  /* text-align: center; */
+  margin: 20px;
+  color: white;
+}
+#inputId{
+  width: 50%;
+  padding: 10px;
+  
+}
+#remove-btn, #add{
+  padding: 10px;
+}
+
+#add{
+  width: 80px;
+  padding: 10px;
+}
+
+    </style>
+</head>
+<body style="background-color: rgb(1, 26, 8);">
+   <div class="box">
+    <input type="text" name="" id="inputId" placeholder="enter your value"> <button id="add" onclick="inputValue()">add</button>
+    <br>
+  <ul id="container"> </ul>
+    <br>
+    <button onclick="deleteProduct()" id="remove-btn">remove</button>
+   </div>
+
+    <script src="storage.js"></script>
+</body>
+</html>
